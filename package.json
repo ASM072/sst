@@ -1,5 +1,5 @@
 {
-  "name": "mld",
+  "name": "sixsigmaadvertising",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://mld.ng/",
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.7"
