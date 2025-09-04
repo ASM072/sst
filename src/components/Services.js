@@ -22,11 +22,21 @@ const Services = () => {
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
                             
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
-                                <div className="m-2 text-justify text-sm">
-                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center">Web Development</h2>
+                                <div className="m-2 text-justify text-sm">   
+                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img4} />                                 
+                                    <h2 className="font-semibold my-4 text-2xl text-center">Cloud Solutions</h2>
                                     <p className="text-md font-medium">
-                                        We specialize in creating and optimizing high-quality, custom websites for businesses and organizations of all sizes. Building mobile-friendly and easy-to-use websites and applications for clients.
+                                    We provide scalable cloud computing and virtualization services that help businesses modernize their IT environments. Our solutions increase flexibility, reduce operational costs, and enable teams to work efficiently from anywhere.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                                <div className="m-2 text-justify text-sm">
+                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img3} />
+                                    <h2 className="font-semibold my-4 text-2xl text-center">Tech Infrastructure</h2>
+                                    <p className="text-md font-medium">
+                                    Our team delivers robust IT infrastructure and networking services to ensure seamless connectivity, smooth operations, and maximum efficiency. From system setup to ongoing support, we make sure your technology backbone is reliable and secure.
                                     </p>
                                 </div>
                             </div>
@@ -34,29 +44,19 @@ const Services = () => {
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                                 <div className="m-2 text-justify text-sm">
                                 <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img2} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center">Mobile App Development</h2>
+                                    <h2 className="font-semibold my-4 text-2xl text-center ">Business Solutions</h2>
                                     <p className="text-md font-medium">
-                                        We develop high-quality, custom cross-platform mobile applications that are robust and optimized for performance, scalability, and accessibility.
+                                    We create high-quality, customized software and enterprise applications that streamline your business operations, enhance productivity, and support long-term growth. Our solutions are designed to fit the unique needs of organizations, institutions, and SMEs.
                                     </p>
                                 </div>
                             </div>
 
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                                 <div className="m-2 text-justify text-sm">
-                                    <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img3} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center ">Domain and Hosting Services</h2>
+                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img} />
+                                    <h2 className="font-semibold my-4 text-2xl text-center ">Security & Risk</h2>
                                     <p className="text-md font-medium">
-                                        We provide domain registration and web hosting services to individuals and organizations to enable them gain visibility in the digital space.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
-                                <div className="m-2 text-justify text-sm">
-                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img4} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center ">General IT Consultations</h2>
-                                    <p className="text-md font-medium">
-                                        Our IT consultations service provides expert guidance and support for businesses and individuals looking to optimize their technology solutions.
+                                    Protect your organization with our advanced cybersecurity and risk management solutions. We help identify vulnerabilities, mitigate risks, and ensure the safety of your data, systems, and overall business continuity.
                                     </p>
                                 </div>
                             </div>                    
@@ -75,7 +75,7 @@ const Services = () => {
                             font-bold">We <span className='font-black'>Build</span></h3>
                             <div>
                                 <p className='my-3 text-xl text-gray-600 font-semibold'>
-                                    With over 10 years experience in software analysis and design and a deep understanding of the latest IT trends and solutions, we provide customized recommendations and strategies to help you improve your operations, reduce costs, and increase efficiency.
+                                    With deep understanding of the latest IT trends and solutions, we provide customized recommendations and strategies to help you improve your operations, reduce costs, and increase efficiency.
                                 </p>
                             </div>
                         </div>
