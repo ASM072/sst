@@ -192,8 +192,15 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+import { useNavigate } from "react-router-dom";
 
 const NavLinks = () => {
+const navigate = useNavigate();
+
+const goToEnterprise = () => {
+  navigate("/enterprise"); // the path of your EnterpriseSolutions page
+};
   const categories = [
     {
       title: "Cloud & Virtualization",
@@ -259,9 +266,9 @@ const NavLinks = () => {
   return (
     <div className="flex flex-row items-center space-x-6">
       {/* About */}
-      <Link to="/about" className="px-4 font-extrabold text-gray-500 hover:text-green-700">
+      <HashLink className="px-4 font-extrabold text-gray-500 hover:text-green-700" smooth to="/#about">
         About
-      </Link>
+     </HashLink>
 
       {/* Services (no hover gap, headings clickable only) */}
       <div className="relative group">
@@ -285,6 +292,7 @@ const NavLinks = () => {
                 <Link
                   to={cat.link}
                   className="block font-bold text-gray-800 hover:text-green-700 mb-2"
+                  onClick={goToEnterprise}
                 >
                   {cat.title}
                 </Link>
@@ -304,20 +312,15 @@ const NavLinks = () => {
       </div>
 
       {/* Other links */}
-      <Link to="/portfolio" className="px-4 font-extrabold text-gray-500 hover:text-green-700">
-        Portfolio
-      </Link>
-
-      <Link to="/contact" className="px-4 font-extrabold text-gray-500 hover:text-green-700">
-        Contact Us
-      </Link>
-
-      <Link
-        to="/get-demo"
-        className="text-white bg-green-700 hover:bg-green-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl"
-      >
-        Demo our products
-      </Link>
+          <HashLink className="px-4 font-extrabold text-gray-500 hover:text-green-700" to="/#portfolio">
+              Portfolio
+          </HashLink>
+          <HashLink className="px-4 font-extrabold text-gray-500 hover:text-green-700" to="/contact#contact">
+              Contact Us
+          </HashLink>
+          <HashLink className="text-white bg-green-700 hover:bg-green-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl" smooth to="/get-demo#demo">
+              Demo our products
+          </HashLink>
     </div>
   );
 };

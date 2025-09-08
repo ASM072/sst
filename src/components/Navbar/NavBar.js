@@ -24,7 +24,7 @@ const NavBar = () => {
         <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && 'bg-white shadow-lg'}`}>
             <div className="flex flex-row justify-between items-center py-2 px-4 md:px-12">
                 <div className="flex flex-row items-center space-x-3">
-                    <img src={logo} alt="Logo" className="h-14 w-14 md:h-16 md:w-16" />
+                    <img src={logo} alt="Logo" className="h-18 w-18 md:h-20 md:w-20" />
                     <HashLink smooth to="/#hero">
                         <h1 className="font-extrabold text-xl md:text-2xl text-green-700">Six Sigma Technologies</h1>
                     </HashLink>
